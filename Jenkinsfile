@@ -15,10 +15,10 @@ pipeline {
                 sh 'ls'
             }
         }
-    }
-    stage('Test') {
-        steps {
-            sh './jenkins/scripts/test.sh'
+        stage('Test') {
+            steps {
+                sh './jenkins/scripts/test.sh'
+            }
         }
     }
 }
